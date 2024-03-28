@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <th>ASIN</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Reviews</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}}
+        <tr>
+            <td>{{this.asin}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.categoryName}}</td>
+            <td>{{this.price}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
